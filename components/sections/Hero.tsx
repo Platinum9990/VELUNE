@@ -1,6 +1,7 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
+import Script from "next/script";
 import { FadeIn } from "../ui/FadeIn";
 
 export function Hero() {
@@ -9,6 +10,11 @@ export function Hero() {
       id="top"
       className="relative min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top,#DCD3FF_0%,#F4F0FF_65%)]"
     >
+      <Script
+        type="module"
+        src="https://unpkg.com/@splinetool/viewer@1.12.69/build/spline-viewer.js"
+        strategy="afterInteractive"
+      />
       <div className="pointer-events-none absolute -left-40 top-0 h-[30rem] w-[30rem] rounded-full bg-glow/70 blur-[180px]" />
       <div className="pointer-events-none absolute right-[-15%] top-10 h-[38rem] w-[38rem] rounded-full bg-lilac/55 blur-[200px]" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_55%_45%,rgba(220,211,255,0.65)_0%,rgba(244,240,255,0.2)_45%,transparent_75%)]" />
@@ -17,12 +23,10 @@ export function Hero() {
       <div className="pointer-events-none absolute inset-y-0 left-0 w-28 bg-gradient-to-r from-base/85 to-transparent" />
 
       <div className="absolute inset-0">
-        <iframe
-          title="VELUNE Sculptural Hero"
-          src="https://my.spline.design/untitled-c6oSypyci6MDVCaMIqIRlViZ/"
+        <spline-viewer
+          url="https://prod.spline.design/MDScGdVJYie0xuYY/scene.splinecode"
           className="absolute left-1/2 top-1/2 h-[135%] w-[135%] -translate-x-1/2 -translate-y-1/2 md:h-[150%] md:w-[150%]"
-          allowFullScreen
-        />
+        ></spline-viewer>
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,rgba(244,240,255,0.92)_0%,rgba(244,240,255,0.45)_35%,rgba(244,240,255,0.12)_60%,rgba(236,230,255,0.6)_100%)]" />
         <div className="pointer-events-none absolute inset-y-0 left-0 w-[40%] bg-[linear-gradient(90deg,rgba(244,240,255,0.95)_0%,rgba(244,240,255,0.55)_45%,transparent_100%)]" />
       </div>
