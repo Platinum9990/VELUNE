@@ -1,0 +1,20 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-base text-charcoal font-sans antialiased;
+}
+
+a {
+  @apply text-inherit no-underline;
+}
+
+::selection {
+  background: #DCD3FF;
+  color: #1C1A22;
+}
