@@ -22,15 +22,14 @@ export function Hero() {
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-72 bg-gradient-to-t from-[#2A223D]/85 via-[#2A223D]/35 to-transparent" />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[#F6F2FF]/85 via-[#F6F2FF]/45 to-transparent" />
       <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#F6F2FF]/90 to-transparent" />
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,rgba(244,240,255,0.75)_0%,rgba(244,240,255,0.35)_35%,rgba(244,240,255,0.1)_60%,rgba(236,230,255,0.55)_100%)]" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-[55%] bg-[linear-gradient(90deg,rgba(244,240,255,0.98)_0%,rgba(244,240,255,0.7)_35%,rgba(244,240,255,0.2)_70%,transparent_100%)]" />
 
       <div className="absolute inset-0 z-10">
         <spline-viewer
           url="https://prod.spline.design/MDScGdVJYie0xuYY/scene.splinecode"
           className="absolute left-0 top-0 h-full w-full translate-x-[6%] translate-y-[3%] scale-[1.12] md:translate-x-[8%] md:translate-y-[4%] md:scale-[1.18] lg:translate-x-[10%] lg:scale-[1.24]"
         ></spline-viewer>
-        <div className="pointer-events-none absolute inset-0 backdrop-blur-[2px]" />
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,rgba(244,240,255,0.75)_0%,rgba(244,240,255,0.35)_35%,rgba(244,240,255,0.1)_60%,rgba(236,230,255,0.55)_100%)]" />
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-[55%] bg-[linear-gradient(90deg,rgba(244,240,255,0.98)_0%,rgba(244,240,255,0.7)_35%,rgba(244,240,255,0.2)_70%,transparent_100%)]" />
       </div>
 
       <div className="relative z-20 mx-auto flex h-screen max-w-[1200px] items-end px-10 pb-[90px] pt-[140px]">
