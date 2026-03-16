@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top,#DCD3FF_0%,#F4F0FF_65%)]"
+      className="relative h-screen overflow-hidden bg-[radial-gradient(circle_at_top,#DCD3FF_0%,#F4F0FF_65%)]"
     >
       <Script
         type="module"
@@ -22,16 +22,16 @@ export function Hero() {
       <div className="pointer-events-none absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-base/92 via-base/55 to-transparent" />
       <div className="pointer-events-none absolute inset-y-0 left-0 w-28 bg-gradient-to-r from-base/85 to-transparent" />
 
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-0">
         <spline-viewer
           url="https://prod.spline.design/MDScGdVJYie0xuYY/scene.splinecode"
-          className="absolute left-1/2 top-1/2 h-[135%] w-[135%] -translate-x-1/2 -translate-y-1/2 md:h-[150%] md:w-[150%]"
+          className="absolute left-0 top-0 h-full w-full"
         ></spline-viewer>
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,rgba(244,240,255,0.92)_0%,rgba(244,240,255,0.45)_35%,rgba(244,240,255,0.12)_60%,rgba(236,230,255,0.6)_100%)]" />
         <div className="pointer-events-none absolute inset-y-0 left-0 w-[40%] bg-[linear-gradient(90deg,rgba(244,240,255,0.95)_0%,rgba(244,240,255,0.55)_45%,transparent_100%)]" />
       </div>
 
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-6xl items-end px-6 pb-28 pt-28 lg:pb-32 lg:pt-36">
+      <div className="relative z-20 mx-auto flex h-screen max-w-[1200px] items-end px-10 pb-[120px] pt-[120px]">
         <div className="max-w-[36rem] space-y-6">
           <FadeIn>
             <p className="text-xs uppercase tracking-[0.4em] text-plum/70">
